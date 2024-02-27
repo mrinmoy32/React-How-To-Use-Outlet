@@ -1,6 +1,6 @@
 import { Outlet, Link } from 'react-router-dom';
-import Team from './Team';
-import History from './History';
+// import Team from './Team';
+// import History from './History';
 
 const About = () => {
   return (
@@ -8,11 +8,11 @@ const About = () => {
       <h2>About Page</h2>
       <nav>
         <ul>
-          <li><Link to="team">Team</Link></li>
-          <li><Link to="history">History</Link></li>
+          {/* <li><Link to="team">Team</Link></li>
+          <li><Link to="history">History</Link></li> */}
         </ul>
       </nav>
-      <Outlet /> {/* Child routes will be rendered here */}
+      {/* <Outlet /> Child routes will be rendered here */}
     </div>
   );
 };
