@@ -12,6 +12,8 @@ import "./App.css";
 When you have nested routes in React Router, the parent route's component can include 
 the <Outlet /> component to specify the location where the child routes should be rendered. 
 <Outlet /> indicates the location in your component where the content of child routes will be injected.
+
+https://medium.com/age-of-awareness/amazing-new-stuff-in-react-router-v6-895ba3fab6af
 */
 
 function App() {

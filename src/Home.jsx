@@ -17,7 +17,7 @@ const Home = () => {
           </li>
         </ul>
       </nav>
-      <Outlet /> {/* Child routes will be rendered here */}
+      <Outlet /> {/* Child routes (of home route i.e. featured and recent) will be rendered here */}
     </div>
   );
 };
