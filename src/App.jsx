@@ -3,6 +3,8 @@ import Home from "./Home";
 import Featured from "./Featured";
 import Recent from "./Recent";
 import About from "./About";
+import Team from "./Team";
+import History from "./History";
 import "./App.css";
 
 /*In React Router, <Outlet /> is a component that acts as a placeholder where child routes can be rendered.
@@ -21,8 +23,10 @@ function App() {
             <Route path="featured" element={<Featured />} />
             <Route path="recent" element={<Recent />} />
           </Route>
-
-          <Route path="/about" element={<About />} />
+          <Route path="/about" element={<About />}>
+            <Route path="team" element={<Team />} />
+            <Route path="history" element={<History />} />
+          </Route>
         </Routes>
       </Router>
     </>
