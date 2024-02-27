@@ -11,9 +11,11 @@ This repository provides a simple example demonstrating how to structure your Re
 ## Getting Started
 
 ### Prerequisites
+
 - Node.js (v14.0.0 or higher)
 
 ### Installation
+
 1. Clone the repository:
    ```bash
    git clone https://github.com/your-username/React-How-To-Use-Outlet.git
@@ -30,25 +32,33 @@ This repository provides a simple example demonstrating how to structure your Re
 ## Usage
 
 ### Run the Development Server
+
 To start the development server, run the following command:
+
 ```bash
 npm run dev
 ```
+
 Visit `http://localhost:3000` in your browser to see the application.
 
 ### Build the Production Version
+
 To build the production version of the application, run:
+
 ```bash
 npm run build
 ```
 
 ### Linting
+
 To lint your code, run:
+
 ```bash
 npm run lint
 ```
 
 ## Project Structure
+
 - `src/`: Source code directory
   - `components/`: React components
   - `App.js`: Main application component
@@ -56,15 +66,18 @@ npm run lint
 - `vite.config.js`: Vite configuration file
 
 ## Dependencies
+
 - React (v18.2.0)
 - React DOM (v18.2.0)
 - React Router DOM (v6.22.1)
 
 ## Development Dependencies
+
 - Vite (v5.0.0)
 - ESLint (v8.53.0)
 
 ## License
+
 This project is licensed under the MIT License - see the [LICENSE](LICENSE) file for details.
 
 Feel free to explore, experiment, and learn how to use `<Outlet />` in your React applications!
