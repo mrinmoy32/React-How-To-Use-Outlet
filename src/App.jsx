@@ -1,7 +1,9 @@
-import { BrowserRouter as Router, Route, Routes } from 'react-router-dom';
-import Home from './Home';
-import About from './About';
-import './App.css'
+import { BrowserRouter as Router, Route, Routes } from "react-router-dom";
+import Home from "./Home";
+import Featured from "./Featured";
+import Recent from "./Recent";
+import About from "./About";
+import "./App.css";
 
 /*In React Router, <Outlet /> is a component that acts as a placeholder where child routes can be rendered.
 
@@ -11,18 +13,20 @@ the <Outlet /> component to specify the location where the child routes should b
 */
 
 function App() {
-
   return (
     <>
-    
       <Router>
-      <Routes>
-        <Route path="/home/*" element={<Home />} />
-        <Route path="/about/*" element={<About />} />
-      </Routes>
-    </Router>
+        <Routes>
+          <Route path="/home" element={<Home />}>
+            <Route path="featured" element={<Featured />} />
+            <Route path="recent" element={<Recent />} />
+          </Route>
+
+          <Route path="/about" element={<About />} />
+        </Routes>
+      </Router>
     </>
-  )
+  );
 }
 
-export default App
+export default App;
